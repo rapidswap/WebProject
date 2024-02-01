@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Signika+Negative:wght@600&display=swap');
+
+html {
+    overflow: hidden;
+  }
+li{
+    list-style-type: none;list-style: none;
+}
+.sub_div{
+    width:350px; 
+    height:300px; 
+    color:#26409a;
+    background:#f3f6ff url(/static/images/bg_nav_left.png) no-repeat right bottom;
+  }
+
+a{
+    text-decoration-line: none;
+}
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .bebas-neue-slim {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #fff;
+  }
+  .Slidesbackground {
+    margin: 0;
+    padding: 0;
+
+}
+svg {
+    display: block;
+    margin: auto;
+  }
+.slideshow-image{
+    border-radius:0%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.mySlides {
+    border-radius:0%;
+    width: 600px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 2.0s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.box {
+    width: 250px;
+    height: 50px;
+    background-color: #ffffff; /* 배경색 설정 */
+    border: 1px solid #26409a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.box:hover {
+    background-color: #26409a; /* 마우스를 올렸을 때의 배경색 */
+    cursor: pointer;
+}
+
+.box a {
+    color: #000000; /* 링크 텍스트 색상 설정 */
+    font-weight: bold; /* 텍스트 굵게 설정 */
+}
+
+.box:hover a {
+    color: #ffffff; /* 마우스를 올렸을 때의 링크 텍스트 색상 설정 */
+    font-weight: bold; /* 텍스트 굵게 설정 */
+}
+
+.subpadding {
+    padding-left:3px;
+    padding-top:2rem;
+    padding-bottom:1rem;
+    padding-right:5px;
+}
