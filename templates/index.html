@@ -7,22 +7,19 @@
 <div style="width: 100%; height: 810px;">
 <span class="slideshow-container">
   <div class="Slidesbackground">
-    <div class="mySlides fade"
-      style="width: 100%; height: 714px; position: absolute; left: 194px; top: 97px; overflow: hidden;">
+    <div class="mySlides fade" style="width: 100%; height: 714px; position: absolute; left: 194px; top: 97px; overflow: hidden; ">
       <img
         src="/static/images/image_2.png"
         style="width: 100%; height: 714px; position: absolute; left: 0px; top: -1px; object-fit: cover;"
       />
       </div>
-      <div class="mySlides fade"
-      style="width: 100%; height: 714px; position: absolute; left: 194px; top: 97px; overflow: hidden;">
+      <div class="mySlides fade" style="width: 100%; height: 714px; position: absolute; left: 194px; top: 97px; overflow: hidden;">
       <img
         src="/static/images/image_3.png"
         style="width: 100%; height: 714px; position: absolute; left: 0px; top: -1px; object-fit: cover;"
       />
       </div>
-      <div class="mySlides fade"
-      style="width: 100%; height: 714px; position: absolute; left: 194px; top: 97px; overflow: hidden;">
+      <div class="mySlides fade" style="width: 100%; height: 714px; position: absolute; left: 194px; top: 97px; overflow: hidden;">
       <img
         src="/static/images/image_4.png"
         style="width: 100%; height: 714px; position: absolute; left: 0px; top: -1px; object-fit: cover;"
@@ -206,9 +203,14 @@
   </p>
 </div>
 </div>
-<div style="height: 100px; position: relative; text-align: center;">
+<div style="height: auto; position: relative; text-align: center;">
   <p style="margin-top: 10px; font-weight: 600;">Notice & Event Information</p>
   <p style="margin-top: 30px; font-size: 24px;">Notice for AnyangPeople</p>
+  <ul style="padding:0px; margin:100px;">
+    {% for i in range(0, translated_titles|length) %}
+        <li style="margin-bottom:10px; text-align: left;""><a href="https://www.anyang.ac.kr/main/communication/notice.do{{ urls[i] }}">{{ translated_titles[i] }}</a></li>
+    {% endfor %}
+</ul>
 </div>
 
 <div style="margin:100px;">
@@ -234,6 +236,34 @@ var marker = new kakao.maps.Marker({
 marker.setMap(map);
 </script>
 </div>
+
+
+<div class="video-container">
+  <!-- 큰 영상 -->
+  <div class="big-video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/2GGV9h90KQo?si=I4nCqch0ZLYPSJkt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  
+  <!-- 작은 영상들 -->
+  <div class="small-video-container">
+      <div class="small-video">
+          <iframe width="272" height="153" src="https://www.youtube.com/embed/HOEVSBPzov0?si=YtlBtrOkjo_HAuuU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      
+      <div class="small-video">
+          <iframe width="272" height="153" src="https://www.youtube.com/embed/Vw_cBOF0qR8?si=k4_vGGAqd08kjcSm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      
+      <div class="small-video">
+          <iframe width="272" height="153" src="https://www.youtube.com/embed/zPGZ6Ezx9os?si=w3I2BSckFKvHXFlK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      
+      <div class="small-video">
+          <iframe width="272" height="153" src="https://www.youtube.com/embed/9RPoOROEKRk?si=dvBXGFQdVkA_L6ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+  </div>
+</div>
+
 </body>
 </html>
 

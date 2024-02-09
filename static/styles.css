@@ -25,6 +25,7 @@ a{
   }
 
 body {
+    overflow-x:hidden;
     margin: 0;
     padding: 0;
     overflow:auto;
@@ -53,7 +54,7 @@ svg {
 }
 .mySlides {
     border-radius:0%;
-    width: 600px;
+    width: 100%;
     height: 350px;
     display: flex;
     justify-content: center;
@@ -66,6 +67,7 @@ svg {
     justify-content: center;
     position: relative;
     margin: auto;
+    
 }
 
 .fade {
@@ -115,4 +117,34 @@ svg {
     padding-top:2rem;
     padding-bottom:1rem;
     padding-right:5px;
+}
+
+.video-container {
+    margin:100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+}
+
+.big-video {
+    width: 560px; /* 큰 영상의 너비 조절 */
+    margin:25px;
+}
+
+.small-video-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:10px;
+    margin-left:20px;
+    width: calc(100% - 560px); /* 작은 영상들의 너비를 설정 */
+}
+
+.small-video {
+    width: 272px; /* 작은 영상의 너비 조절 */
+    margin: 5px;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
 }
