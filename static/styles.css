@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Signika+Negative:wght@600&display=swap');
 
-html {
-    overflow: hidden;
-  }
 li{
     list-style-type: none;list-style: none;
 }
@@ -26,16 +23,17 @@ a{
     font-weight: 200;
     font-style: normal;
   }
+
 body {
     margin: 0;
     padding: 0;
+    overflow:auto;
   }
 
   .container {
     position: relative;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
     background: #fff;
   }
   .Slidesbackground {
