@@ -107,6 +107,10 @@ def Notice():
     # HTML 템플릿에 전달
     return render_template('Notice.html', titles=titles, urls=urls)
 
+@app.route('/graduateschool')
+def graduateschool():
+    return render_template('graduateschool.html')
+
 def main():
     while True:
         crawl_website()
